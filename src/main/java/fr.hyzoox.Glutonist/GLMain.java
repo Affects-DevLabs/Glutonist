@@ -1,5 +1,6 @@
 package fr.hyzoox.Glutonist;
 
+import fr.hyzoox.Glutonist.utils.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,12 +24,16 @@ public class GLMain
 {
 
     private static final Logger LOGGER = LogManager.getLogger();
+    public static String MODID = "gluto";
+
 
     public GLMain() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
