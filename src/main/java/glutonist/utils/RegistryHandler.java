@@ -1,7 +1,7 @@
-package fr.hyzoox.Glutonist.utils;
+package fr.hyzoox.glutonist.utils;
 
-import fr.hyzoox.Glutonist.GLMain;
-import fr.hyzoox.Glutonist.items.ItemBase;
+import fr.hyzoox.glutonist.GLMain;
+import fr.hyzoox.glutonist.items.ItemBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

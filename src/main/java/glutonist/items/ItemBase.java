@@ -1,4 +1,4 @@
-package fr.hyzoox.Glutonist.items;
+package fr.hyzoox.glutonist.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
