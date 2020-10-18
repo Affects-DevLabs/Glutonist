@@ -20,6 +20,10 @@ public class RegistryHandler {
 
     // Items
 public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", ItemBase::new);
+    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", ItemBase::new);
+    public static final RegistryObject<Item> CHOCOLATE_CHIP = ITEMS.register("chocolate_chip", ItemBase::new);
+    public static final RegistryObject<Item> DOUGH_WITH_CHOCOLATE_CHIP = ITEMS.register("dough_chocolate_chip", ItemBase::new);
+
 
 }
 

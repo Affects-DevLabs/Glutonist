@@ -12,9 +12,6 @@
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="mappingFile" value="$MODULE_DIR$/../../build/createMcpToSrg/output.tsrg" />
-    <option name="mcpVersion" value="snapshot_20200514-1.16" />
-    <option name="minecraftVersion" value="1.16.1" />
-    <option name="srgType" value="TSRG" />
+    <option name="srgType" value="SRG" />
   </component>
 </module>

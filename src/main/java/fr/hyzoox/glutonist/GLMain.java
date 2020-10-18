@@ -3,6 +3,8 @@ package fr.hyzoox.glutonist;
 import fr.hyzoox.glutonist.utils.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -49,12 +51,11 @@ public class GLMain
         LOGGER.info("Initialization of Glutonist : Connection Enabled");
     }
 
-
-    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            LOGGER.info("Initialization of Glutonist : Block Enabled");
+    public static final ItemGroup TAB = new ItemGroup("Glutonist") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.DOUGH.get());
         }
-    }
+    };
+
 }
